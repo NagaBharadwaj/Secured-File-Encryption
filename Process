@@ -1,0 +1,12 @@
+# Generate a new encryption key
+encryption_key = generate_key()
+# Prompt the user to enter the file paths
+input_file_path = input("Enter the path to the file you want to encrypt: ")
+output_file_path = input("Enter the path to save the encrypted file: ")
+# Encrypt the file
+encrypt_file(encryption_key, input_file_path, output_file_path)
+# Prompt the user to enter the file path of the encrypted file to decrypt
+encrypted_file_path = input("Enter the path to the encrypted file: ")
+decrypted_output_file_path = input("Enter the path to save the decrypted file: ")
+# Decrypt the encrypted file
+decrypt_file(encryption_key, encrypted_file_path, decrypted_output_file_path)
